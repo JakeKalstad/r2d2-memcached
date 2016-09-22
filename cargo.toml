@@ -1,0 +1,21 @@
+[package]
+name = "r2d2_memcache"
+version = "0.0.1"
+authors = [
+    "Jake Kalstad <jakekalstad@gmail.com>"
+]
+license = "MIT"
+description = "Memcache support for the r2d2 connection pool"
+repository = "https://github.com/jakekalstad/r2d2-memcache"
+documentation = "https://sorccu.github.io/r2d2-memcache/doc/v0.2.0/r2d2_redis/"
+keywords = ["memcache", "pool", "database", "r2d2"]
+include = ["src/**/*", "LICENSE", "Cargo.toml"]
+
+[lib]
+name = "r2d2_memcache"
+path = "src/lib.rs"
+test = false
+
+[dependencies]
+r2d2 = "0.7"
+memcached-rs = "0.1.2"
